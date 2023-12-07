@@ -1,4 +1,4 @@
-# Serilog.Sinks.FastConsole
+# Serilog.Sinks.SpeedConsole
 
 Serilog sink that writes to console with high-performance non-blocking output. Supports plaintext and JSON output but **does not support themes and colors**.
 
@@ -11,10 +11,10 @@ Recommended for high-volume logging where console output is collected or redirec
 
 ## Getting started
 
-#### Install [package from Nuget](https://www.nuget.org/packages/Serilog.Sinks.FastConsole/):
+#### Install [package from Nuget](https://www.nuget.org/packages/Serilog.Sinks.SpeedConsole/):
 
 ```
-dotnet add package Serilog.Sinks.FastConsole
+dotnet add package Serilog.Sinks.SpeedConsole
 ```
 
 #### Configure Logger (using code):
