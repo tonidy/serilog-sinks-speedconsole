@@ -2,9 +2,9 @@
 
   <PropertyGroup>
     <PackageId>Serilog.Sinks.SpeedConsole</PackageId>
-    <PackageVersion>2.4.1</PackageVersion>
+    <PackageVersion>2.4.2</PackageVersion>
     <Description>Serilog sink that writes to console with high-performance non-blocking output.</Description>
-    <Authors>tonid</Authors>
+    <Authors>StarcadeGame</Authors>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageIcon>serilog-sink-nuget.png</PackageIcon>
     <PackageIconUrl>https://raw.githubusercontent.com/tonidy/serilog-sinks-speedconsole/master/src/Serilog.Sinks.SpeedConsole/serilog-sink-nuget.png</PackageIconUrl>
