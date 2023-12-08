@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serilog.Sinks.FastConsole", "Serilog.Sinks.FastConsole\Serilog.Sinks.FastConsole.csproj", "{F8EBDE06-5EFD-49AD-83FD-9565B0402AEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serilog.Sinks.SpeedConsole", "Serilog.Sinks.SpeedConsole\Serilog.Sinks.SpeedConsole.csproj", "{F8EBDE06-5EFD-49AD-83FD-9565B0402AEA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoApp", "DemoApp\DemoApp.csproj", "{EC453D1A-EFCA-4B62-A8AC-F919935C86CB}"
 EndProject

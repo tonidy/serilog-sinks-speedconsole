@@ -1,17 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <PackageVersion>2.4.0</PackageVersion>
+    <PackageId>Serilog.Sinks.SpeedConsole</PackageId>
+    <PackageVersion>2.4.1</PackageVersion>
     <Description>Serilog sink that writes to console with high-performance non-blocking output.</Description>
-    <Authors>Mani Gandham</Authors>
+    <Authors>tonid</Authors>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageIcon>serilog-sink-nuget.png</PackageIcon>
-    <PackageIconUrl>https://raw.githubusercontent.com/manigandham/serilog-sinks-fastconsole/master/src/Serilog.Sinks.FastConsole/serilog-sink-nuget.png</PackageIconUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/tonidy/serilog-sinks-speedconsole/master/src/Serilog.Sinks.SpeedConsole/serilog-sink-nuget.png</PackageIconUrl>
     <PackageTags>serilog; sink; console;</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageReleaseNotes>https://github.com/manigandham/serilog-sinks-fastconsole/blob/master/CHANGELOG.md</PackageReleaseNotes>
-    <PackageProjectUrl>https://manigandham.com/post/serilog-sinks-fastconsole</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/manigandham/serilog-sinks-fastconsole</RepositoryUrl>
+    <PackageReleaseNotes>https://github.com/tonidy/serilog-sinks-speedconsole/blob/master/CHANGELOG.md</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/tonidy/serilog-sinks-speedconsole</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/tonidy/serilog-sinks-speedconsole</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
@@ -21,8 +22,12 @@
     <TargetFrameworks>net7.0;net6.0;netstandard2.1;netstandard2.0</TargetFrameworks>
     <LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
+    <IsPackable>true</IsPackable>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\Serilog.Sinks.SpeedConsole\bin\Debug</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
     <None Include="serilog-sink-nuget.png" Pack="true" PackagePath="\" />
     <None Include="../../README.md" Pack="true" PackagePath="\" />

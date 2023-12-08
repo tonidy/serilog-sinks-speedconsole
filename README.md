@@ -20,8 +20,8 @@ dotnet add package Serilog.Sinks.SpeedConsole
 #### Configure Logger (using code):
 
 ```csharp
-var config = new FastConsoleSinkOptions { UseJson = true };
-Log.Logger = new LoggerConfiguration().WriteTo.FastConsole(config).CreateLogger();
+var config = new SpeedConsoleSinkOptions { UseJson = true };
+Log.Logger = new LoggerConfiguration().WriteTo.SpeedConsole(config).CreateLogger();
 ```
 
 -   Serilog example for .NET 6: https://blog.datalust.co/using-serilog-in-net-6/

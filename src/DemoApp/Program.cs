@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Serilog;
-using Serilog.Sinks.FastConsole;
+using Serilog.Sinks.SpeedConsole;
 
 Random _random = new();
 
@@ -21,12 +21,12 @@ Serilog.Debugging.SelfLog.Enable(Console.WriteLine);
 
 var threadsCount = 50;
 var logsCount = 100;
-var sinkOptions = new FastConsoleSinkOptions { UseJson = true, QueueLimit = 1000, BlockWhenFull = true };
+var sinkOptions = new SpeedConsoleSinkOptions { UseJson = true, QueueLimit = 1000, BlockWhenFull = true };
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Host.UseSerilog((ctx, lc) =>
 {
-    lc.MinimumLevel.Debug().Enrich.FromLogContext().WriteTo.FastConsole(sinkOptions);
+    lc.MinimumLevel.Debug().Enrich.FromLogContext().WriteTo.SpeedConsole(sinkOptions);
     //.WriteTo.File("log.txt", shared: true);
     //.WriteTo.Console()
 });

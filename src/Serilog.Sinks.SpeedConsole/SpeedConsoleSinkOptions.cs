@@ -1,9 +1,9 @@
-﻿namespace Serilog.Sinks.FastConsole;
+﻿namespace Serilog.Sinks.SpeedConsole;
 
 /// <summary>
-/// Configuration options for <see cref="FastConsoleSink"/> .
+/// Configuration options for <see cref="SpeedConsoleSink"/> .
 /// </summary>
-public class FastConsoleSinkOptions
+public class SpeedConsoleSinkOptions
 {
     /// <summary>
     /// Set max limit for the number of log entries queued in memory. 

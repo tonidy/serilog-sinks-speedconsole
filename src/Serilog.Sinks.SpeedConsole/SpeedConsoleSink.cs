@@ -8,20 +8,20 @@ using Serilog.Events;
 using Serilog.Formatting;
 using Serilog.Formatting.Json;
 
-namespace Serilog.Sinks.FastConsole;
+namespace Serilog.Sinks.SpeedConsole;
 
-public class FastConsoleSink : ILogEventSink, IDisposable
+public class SpeedConsoleSink : ILogEventSink, IDisposable
 {
     private static readonly StreamWriter _consoleWriter = new(Console.OpenStandardOutput(), Console.OutputEncoding, 4096, true);
     private readonly StringWriter _bufferWriter = new();
     private readonly Channel<LogEvent?> _queue;
     private readonly Task _worker;
-    private readonly FastConsoleSinkOptions _options;
+    private readonly SpeedConsoleSinkOptions _options;
     private readonly ITextFormatter? _textFormatter;
     private readonly JsonValueFormatter _valueFormatter = new();
     private readonly bool _waitForQueue;
 
-    public FastConsoleSink(FastConsoleSinkOptions options, ITextFormatter? textFormatter)
+    public SpeedConsoleSink(SpeedConsoleSinkOptions options, ITextFormatter? textFormatter)
     {
         _options = options;
         _textFormatter = textFormatter;
