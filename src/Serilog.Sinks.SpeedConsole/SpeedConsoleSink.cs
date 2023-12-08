@@ -12,7 +12,7 @@ namespace Serilog.Sinks.SpeedConsole;
 
 public class SpeedConsoleSink : ILogEventSink, IDisposable
 {
-    private static readonly StreamWriter _consoleWriter = new(Console.OpenStandardOutput(), Console.OutputEncoding, 4096, true);
+    private static readonly StreamWriter _consoleWriter = new(Console.OpenStandardOutput(), Console.OutputEncoding, 4096, true) { AutoFlush = true };
     private readonly StringWriter _bufferWriter = new();
     private readonly Channel<LogEvent?> _queue;
     private readonly Task _worker;
